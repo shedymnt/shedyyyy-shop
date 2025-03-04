@@ -1,6 +1,5 @@
 
-//this function named factory takes four parameters: id, name, price, and image and return an object with these properties
-It returns an object with these properties
+//this function named factory takes four parameters: id, name, price, and image and return an object with these properties It returns an object with these properties
 function factory(id, name, price, image) {
     return {
         id: id,
@@ -84,7 +83,7 @@ function displayCartItems() {
             var cartItemDiv = document.createElement('li')
             cartItemDiv.className = 'cart-item'
             cartItemDiv.innerHTML = `
-                <img src="${motor.image}" alt="${motor.name}" style="width: 50px; height: auto; margin-right: 10px;">
+                <img src="${motor.image}" alt="${motor.name}" 
                 <div class="info">
                     <h3>${motor.name}</h3>
                     <p>Price: $${motor.price}</p>
@@ -130,7 +129,7 @@ function login() {
         localStorage.setItem('username', username)
         alert('Logged in successfully!')
         document.getElementById('login-section').style.display = 'none'
-        displayMotors()
+        displayMotors();
     } else {
         alert('Please enter valid credentials!')
     }
@@ -140,7 +139,7 @@ if (!localStorage.getItem('username')) {
     document.getElementById('login-section').style.display = 'block'  
 } else {
     document.getElementById('login-section').style.display = 'block'  
-    displayMotors() 
+    displayMotors() ;
 }
 // add motor This function give the user the acces to add a new motor to the list
 function addMotor() {
