@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - MotorShop</title>
+    <link rel="stylesheet" href="index.css"> 
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h2>MotorShop</h2>
+        </div>
+        <ul>
+            <a href="home.html">Home</a>
+            <a href="index.html">Shop</a>
+            <a href="contact.html">Contact</a>
+        </ul>
+        <div class="search">
+            <input type="text" placeholder="Search for motors...">
+            <button>Search</button>
+        </div>
+        <button>Checkout</button>
+        <button onclick="toggleCart()">Cart (<span id="cart-count">0</span>)</button>
+    </nav>
+
+    <header>
+        <h1>Contact Us</h1>
+        <p>we are 24/24 avalaible,you can contact us</p>
+    </header>
+
+    <section class="contact-section">
+        <div class="contact-info">
+            <h2>Our Contact Details</h2>
+            <p><strong>Email:</strong> shedymnt@motorshop.com</p>
+            <p><strong>Phone:</strong> +216 77542169</p>
+            <p><strong>Address:</strong>  Motor Street, ghazella city, ariana</p>
+        </div>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+
+            </form>
+    </section>
+    <footer>
+        <p>&copy; 2025 MotorShop. All rights reserved.</p>
+    </footer>
+</body>
+</html>

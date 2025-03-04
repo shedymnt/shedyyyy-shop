@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MotorShop</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h2>MotorShop</h2>
+        </div>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="index.html">Shop</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="search">
+            <input type="text" placeholder="Search for motors..." onkeyup="searchFunction()">
+            <button>Search</button>
+        </div>
+        <div class="nav-buttons">
+            <button onclick="addMotor()" class="add-motor-btn">Add Motor</button>
+            <button onclick="toggleCart()" class="cart-btn">Cart (<span id="cart-count">0</span>)</button>
+        </div>
+    </nav>
+
+    <div id="login-section" class="login-section">
+        <h3>Login</h3>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="login()">Login</button>
+    </div>
+
+    <header>
+        <h1>Welcome to MotorShop</h1>
+        <p>The best motor shop in town</p>
+    </header>
+
+    <section id="products-list" class="products-grid"></section>
+    <section id="cart-container" class="cart-container">
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <button onclick="checkout()" class="checkout-btn">Checkout</button>
+        <button onclick="toggleCart()" class="close-cart-btn">Close</button>
+    </section>
+
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
